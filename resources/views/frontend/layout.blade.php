@@ -31,8 +31,8 @@ s0.parentNode.insertBefore(s1,s0);
 </div>
 <div id="menu">
 	<a href="{{url('')}}">Trang chủ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="index.html">Sản phẩm</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="{{url('contact')}}">Liên hệ</a>
+	<a href="{{url('')}}"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="{{url('')}}"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 <div id="menu_line"></div>
 <!-- end header -->
@@ -56,13 +56,6 @@ s0.parentNode.insertBefore(s1,s0);
 		
 		<div id="logo">
 			<div style="text-align:right; font-weight:bold; padding-right:60px; padding-top:6px;">Logo</div>
-			<!-- tao bang tbl_adv
-	pk_adv_id int ai
-	c_name 
-	c_img
-	c_position int neu =1 se anh quang cao ben trai =2 thi ben phai
-	//lay het thong tin c_position=1
-			 -->
 			<div style="border-color:#dddddd; border-style:solid; border-width:1px; margin-top:8px; padding-left:0px; padding-top:5px; padding-bottom:5px; padding-right:0px;">
 			<?php
 				$arr_adv=DB::table("tbl_adv")->where("c_position","=","1")->get();
