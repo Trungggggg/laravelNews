@@ -26,7 +26,7 @@
 					<td style="text-align:center;">{{ $stt }}</td>
 					<td style="text-align:center;"> 
 							<?php 
-							if (file_exists("upload/news/".$rows->c_img)){
+							if (file_exists('upload/news/'.$rows->c_img)){
 								?>
 						 <img src="{{ asset('upload/news/'.$rows->c_img)}}" style="width: 100px;">
 						 <?php } ?>
@@ -53,9 +53,6 @@
 				</tr>
 				<?php } ?>
 			</table>
-			<style type="text/css">
-				.pagination{padding:0px; margin:0px;}			
-			</style>
 			<?php echo $arr->links(); ?>
 		</div>
 	</div>
